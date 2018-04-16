@@ -1,0 +1,100 @@
+@function cols($sheetdata) {
+	@return nth($sheetdata, 4);
+}
+
+@function rows($sheetdata) {
+	@return nth($sheetdata, 5);
+}
+
+@mixin spritesheet-set-keyframes-complex ( $spritesheet-cols, $spritesheet-rows, $start, $duration, $total, $reverse:false ){
+
+	$_start: 100 * $start / $total;
+	$_duration: 100 * $duration / $total ;
+
+	// number or frames
+	// -1 because 0 is a value in th @for loop
+	$frames:($spritesheet-rows * $spritesheet-cols) - 1;
+
+	$total-frames: $frames;
+	// avoid showing final frame twice in reverse frames
+	$rframes: $frames - 1 ;
+
+	$total-frames: if( $reverse, $rframes + $frames + 1, $frames );
+
+	// background-position: % does not follow normal dimensions css logic
+	// ex. background-position: 0% 0% ; displays 1st frame
+	// background-position: 100% 100% ; displays last frame ( unexpected - not mathematicaly correct )
+	// to compensate for this  -1 is used
+
+	$col-position-fix: if(($spritesheet-cols - 1) != 0, $spritesheet-cols - 1, 1 );
+	$row-position-fix: if(($spritesheet-rows - 1) != 0, $spritesheet-rows - 1, 1 );
+
+
+	$col-ratio: -400 / $col-position-fix;
+	//percentage height of frame
+	$row-ratio: -300 / $row-position-fix;
+
+	$x:0;
+	$y:0;
+
+	// define number of decimal places. ex 10 == 1  100 == 2
+	$accuracy:100;
+
+	@for $i from 0 through $frames {
+
+		//current col
+		$col: $i % $spritesheet-cols;
+		//current row
+		$row: floor( $i / $spritesheet-cols);
+
+		//position of frame in percent on x-axis (percent)
+		$x:#{$col * $col-ratio + '%'};
+		//position of frame in percent on y-axis (percent)
+		$y:#{$row * $row-ratio +'%'};
+
+		$step: $i * $_duration / $total-frames ;
+
+		// find step percentage
+		//$at:  round($accuracy * $i * ($animation-pauseat) / $frames) / $accuracy;
+
+		$at: round($accuracy * ( $_start + $step )) / $accuracy ;
+
+		#{$at}% {
+			background-position: $x $y ;
+			background-image: url("sprite-1.jpg");
+			@content;
+		}
+	}
+
+	@if $reverse {
+
+		@for $i from $rframes through 0 {
+
+			//current col
+			$col: $i % $spritesheet-cols;
+			//current row
+			$row: floor( $i / $spritesheet-cols);
+
+			//position of frame in percent on x-axis (percent)
+			$x:#{$col * $col-ratio + '%'};
+			//position of frame in percent on x-axis (percent)
+			$y:#{$row * $row-ratio +'%'};
+
+			$ii: $frames + ( $rframes - $i ) + 1;
+
+			$step: $ii * $_duration / $total-frames ;
+
+			// find step percentage
+			//$at:  round($accuracy * $i * ($animation-pauseat) / $frames) / $accuracy;
+
+			$at:  round($accuracy * ( $_start + $step )) / $accuracy ;
+
+			#{$at+"%"} {
+				background-position: $x $y ;
+				@content;
+			}
+		}
+
+	}
+
+}

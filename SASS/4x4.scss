@@ -1,0 +1,64 @@
+@import "spritesheets" ;
+
+$sprite-sheet:('', 500%, 400%, 5, 4,);
+
+
+// *[class].responsive-container-sprite-4x4 {
+// 	position: relative;
+// 	width: 100%;
+// 	margin:0 auto;
+// 	max-width:610px;
+
+// 	@include spritesheet-set-background ($sprite-sheet, false);
+// 	@include spritesheet-set-animation (sprite-animation-4x4, 2s)
+// }
+$delay:1s;
+$dur:0s;
+$total:10s;
+$firstDuration:$total * .20	;
+$secondDuration:$firstDuration;
+$secondDelay:$firstDuration * .97;
+$thirdDuration:$firstDuration;
+$thirdDelay:$firstDuration * .97;
+$fourthDuration:$firstDuration;
+$fourthDelay:$firstDuration * .97;
+
+@-webkit-keyframes forward1 {
+
+	@include spritesheet-set-keyframes-complex ( cols($sprite-sheet), rows($sprite-sheet), $delay, $firstDuration, $total, $reverse:false )
+	//@include spritesheet-set-keyframes-complex (cols($sprite-sheet), rows($sprite-sheet), $omit-frames:null);
+}
+
+@-webkit-keyframes forward2 {
+
+	@include spritesheet-set-keyframes-complex ( cols($sprite-sheet), rows($sprite-sheet), $secondDelay, $secondDuration, $total, $reverse:false )
+	//@include spritesheet-set-keyframes-complex (cols($sprite-sheet), rows($sprite-sheet), $omit-frames:null);
+}
+
+@-webkit-keyframes forward3 {
+
+	@include spritesheet-set-keyframes-complex ( cols($sprite-sheet), rows($sprite-sheet), $thirdDelay, $thirdDuration, $total, $reverse:false )
+	//@include spritesheet-set-keyframes-complex (cols($sprite-sheet), rows($sprite-sheet), $omit-frames:null);
+}
+
+@-webkit-keyframes forward4 {
+
+	@include spritesheet-set-keyframes-complex ( cols($sprite-sheet), rows($sprite-sheet), $fourthDelay, $fourthDuration, $total, $reverse:false )
+	//@include spritesheet-set-keyframes-complex (cols($sprite-sheet), rows($sprite-sheet), $omit-frames:null);
+}
+
+
+
+// *[class].play-sprite-once {
+// 	animation-iteration-count: 1;
+// }
+
+// *[class].play-sprite-infinite {
+// 	animation-iteration-count: infinite;
+// }
+
+//@for $i from 1 through 70{
+//	.a{
+//		width:$i * 1.5%;
+//	}
+//}

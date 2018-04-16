@@ -1,0 +1,246 @@
+@-webkit-keyframes forward1 {
+  10% {
+    background-position: 0% 0%;
+    background-image: url("sprite-1.jpg"); }
+  11.05% {
+    background-position: -100% 0%;
+    background-image: url("sprite-1.jpg"); }
+  12.11% {
+    background-position: -200% 0%;
+    background-image: url("sprite-1.jpg"); }
+  13.16% {
+    background-position: -300% 0%;
+    background-image: url("sprite-1.jpg"); }
+  14.21% {
+    background-position: -400% 0%;
+    background-image: url("sprite-1.jpg"); }
+  15.26% {
+    background-position: 0% -100%;
+    background-image: url("sprite-1.jpg"); }
+  16.32% {
+    background-position: -100% -100%;
+    background-image: url("sprite-1.jpg"); }
+  17.37% {
+    background-position: -200% -100%;
+    background-image: url("sprite-1.jpg"); }
+  18.42% {
+    background-position: -300% -100%;
+    background-image: url("sprite-1.jpg"); }
+  19.47% {
+    background-position: -400% -100%;
+    background-image: url("sprite-1.jpg"); }
+  20.53% {
+    background-position: 0% -200%;
+    background-image: url("sprite-1.jpg"); }
+  21.58% {
+    background-position: -100% -200%;
+    background-image: url("sprite-1.jpg"); }
+  22.63% {
+    background-position: -200% -200%;
+    background-image: url("sprite-1.jpg"); }
+  23.68% {
+    background-position: -300% -200%;
+    background-image: url("sprite-1.jpg"); }
+  24.74% {
+    background-position: -400% -200%;
+    background-image: url("sprite-1.jpg"); }
+  25.79% {
+    background-position: 0% -300%;
+    background-image: url("sprite-1.jpg"); }
+  26.84% {
+    background-position: -100% -300%;
+    background-image: url("sprite-1.jpg"); }
+  27.89% {
+    background-position: -200% -300%;
+    background-image: url("sprite-1.jpg"); }
+  28.95% {
+    background-position: -300% -300%;
+    background-image: url("sprite-1.jpg"); }
+  30% {
+    background-position: -400% -300%;
+    background-image: url("sprite-1.jpg"); } }
+@-webkit-keyframes forward2 {
+  19.4% {
+    background-position: 0% 0%;
+    background-image: url("sprite-1.jpg"); }
+  20.45% {
+    background-position: -100% 0%;
+    background-image: url("sprite-1.jpg"); }
+  21.51% {
+    background-position: -200% 0%;
+    background-image: url("sprite-1.jpg"); }
+  22.56% {
+    background-position: -300% 0%;
+    background-image: url("sprite-1.jpg"); }
+  23.61% {
+    background-position: -400% 0%;
+    background-image: url("sprite-1.jpg"); }
+  24.66% {
+    background-position: 0% -100%;
+    background-image: url("sprite-1.jpg"); }
+  25.72% {
+    background-position: -100% -100%;
+    background-image: url("sprite-1.jpg"); }
+  26.77% {
+    background-position: -200% -100%;
+    background-image: url("sprite-1.jpg"); }
+  27.82% {
+    background-position: -300% -100%;
+    background-image: url("sprite-1.jpg"); }
+  28.87% {
+    background-position: -400% -100%;
+    background-image: url("sprite-1.jpg"); }
+  29.93% {
+    background-position: 0% -200%;
+    background-image: url("sprite-1.jpg"); }
+  30.98% {
+    background-position: -100% -200%;
+    background-image: url("sprite-1.jpg"); }
+  32.03% {
+    background-position: -200% -200%;
+    background-image: url("sprite-1.jpg"); }
+  33.08% {
+    background-position: -300% -200%;
+    background-image: url("sprite-1.jpg"); }
+  34.14% {
+    background-position: -400% -200%;
+    background-image: url("sprite-1.jpg"); }
+  35.19% {
+    background-position: 0% -300%;
+    background-image: url("sprite-1.jpg"); }
+  36.24% {
+    background-position: -100% -300%;
+    background-image: url("sprite-1.jpg"); }
+  37.29% {
+    background-position: -200% -300%;
+    background-image: url("sprite-1.jpg"); }
+  38.35% {
+    background-position: -300% -300%;
+    background-image: url("sprite-1.jpg"); }
+  39.4% {
+    background-position: -400% -300%;
+    background-image: url("sprite-1.jpg"); } }
+@-webkit-keyframes forward3 {
+  19.4% {
+    background-position: 0% 0%;
+    background-image: url("sprite-1.jpg"); }
+  20.45% {
+    background-position: -100% 0%;
+    background-image: url("sprite-1.jpg"); }
+  21.51% {
+    background-position: -200% 0%;
+    background-image: url("sprite-1.jpg"); }
+  22.56% {
+    background-position: -300% 0%;
+    background-image: url("sprite-1.jpg"); }
+  23.61% {
+    background-position: -400% 0%;
+    background-image: url("sprite-1.jpg"); }
+  24.66% {
+    background-position: 0% -100%;
+    background-image: url("sprite-1.jpg"); }
+  25.72% {
+    background-position: -100% -100%;
+    background-image: url("sprite-1.jpg"); }
+  26.77% {
+    background-position: -200% -100%;
+    background-image: url("sprite-1.jpg"); }
+  27.82% {
+    background-position: -300% -100%;
+    background-image: url("sprite-1.jpg"); }
+  28.87% {
+    background-position: -400% -100%;
+    background-image: url("sprite-1.jpg"); }
+  29.93% {
+    background-position: 0% -200%;
+    background-image: url("sprite-1.jpg"); }
+  30.98% {
+    background-position: -100% -200%;
+    background-image: url("sprite-1.jpg"); }
+  32.03% {
+    background-position: -200% -200%;
+    background-image: url("sprite-1.jpg"); }
+  33.08% {
+    background-position: -300% -200%;
+    background-image: url("sprite-1.jpg"); }
+  34.14% {
+    background-position: -400% -200%;
+    background-image: url("sprite-1.jpg"); }
+  35.19% {
+    background-position: 0% -300%;
+    background-image: url("sprite-1.jpg"); }
+  36.24% {
+    background-position: -100% -300%;
+    background-image: url("sprite-1.jpg"); }
+  37.29% {
+    background-position: -200% -300%;
+    background-image: url("sprite-1.jpg"); }
+  38.35% {
+    background-position: -300% -300%;
+    background-image: url("sprite-1.jpg"); }
+  39.4% {
+    background-position: -400% -300%;
+    background-image: url("sprite-1.jpg"); } }
+@-webkit-keyframes forward4 {
+  19.4% {
+    background-position: 0% 0%;
+    background-image: url("sprite-1.jpg"); }
+  20.45% {
+    background-position: -100% 0%;
+    background-image: url("sprite-1.jpg"); }
+  21.51% {
+    background-position: -200% 0%;
+    background-image: url("sprite-1.jpg"); }
+  22.56% {
+    background-position: -300% 0%;
+    background-image: url("sprite-1.jpg"); }
+  23.61% {
+    background-position: -400% 0%;
+    background-image: url("sprite-1.jpg"); }
+  24.66% {
+    background-position: 0% -100%;
+    background-image: url("sprite-1.jpg"); }
+  25.72% {
+    background-position: -100% -100%;
+    background-image: url("sprite-1.jpg"); }
+  26.77% {
+    background-position: -200% -100%;
+    background-image: url("sprite-1.jpg"); }
+  27.82% {
+    background-position: -300% -100%;
+    background-image: url("sprite-1.jpg"); }
+  28.87% {
+    background-position: -400% -100%;
+    background-image: url("sprite-1.jpg"); }
+  29.93% {
+    background-position: 0% -200%;
+    background-image: url("sprite-1.jpg"); }
+  30.98% {
+    background-position: -100% -200%;
+    background-image: url("sprite-1.jpg"); }
+  32.03% {
+    background-position: -200% -200%;
+    background-image: url("sprite-1.jpg"); }
+  33.08% {
+    background-position: -300% -200%;
+    background-image: url("sprite-1.jpg"); }
+  34.14% {
+    background-position: -400% -200%;
+    background-image: url("sprite-1.jpg"); }
+  35.19% {
+    background-position: 0% -300%;
+    background-image: url("sprite-1.jpg"); }
+  36.24% {
+    background-position: -100% -300%;
+    background-image: url("sprite-1.jpg"); }
+  37.29% {
+    background-position: -200% -300%;
+    background-image: url("sprite-1.jpg"); }
+  38.35% {
+    background-position: -300% -300%;
+    background-image: url("sprite-1.jpg"); }
+  39.4% {
+    background-position: -400% -300%;
+    background-image: url("sprite-1.jpg"); } }
+
+/*# sourceMappingURL=4x4.css.map */
